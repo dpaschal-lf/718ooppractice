@@ -19,4 +19,24 @@ function startApp(){
 		var nextCard = sim.deal();
 		player.add( nextCard );
 	}
+
+	var dealerDeck = sim.render();
+	var playerDeck = player.render();
+	$('body').append(dealerDeck, playerDeck);
+	player.renderAllCards();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
