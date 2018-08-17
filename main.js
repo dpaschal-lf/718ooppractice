@@ -2,6 +2,7 @@
 $(document).ready( startApp );
 
 var sim;
+var player;
 function startApp(){
 	sim = new Deck();
 	var suites = ['heart','club','spade','diamond'];
@@ -12,4 +13,10 @@ function startApp(){
 		}
 	}
 	sim.shuffle();
+	player = new Deck();
+
+	for(var count=0; count<5; count++){
+		var nextCard = sim.deal();
+		player.add( nextCard );
+	}
 }

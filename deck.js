@@ -18,4 +18,28 @@ class Deck{
 	deal(){
 		return this.cards.pop()
 	}
+	add(newCard){
+		debugger;
+		if(newCard.constructor === Card){
+			this.cards.push(newCard);
+		} else {
+			console.error('can only add cards');
+		}
+	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
