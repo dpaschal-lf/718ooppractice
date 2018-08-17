@@ -11,4 +11,5 @@ function startApp(){
 			sim.makeCard(values[values_index], suites[suite_index]);
 		}
 	}
+	sim.shuffle();
 }
